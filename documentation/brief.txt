@@ -1,0 +1,32 @@
+Task brief
+
+The internal platform capabilities must include:
+
+1. Document sharing (briefings, working papers, agendas, reports and reference
+information).
+2. Discussion forums (internal and/or external) that are simple to use.
+3. Methods for members to stay in touch out of Session.
+4. A method for Assembly members, Board and working groups to share, test and seek
+feedback on items outside of formal meetings.
+
+The external information and engagement platform must provide:
+
+1. An online engagement feature to pose questions, polls and discussion forums to share information and gain insight from the wider.
+2. Community Capability to share documents such as meeting minutes, reports and Statistical
+information for public accountability.
+3. News updates and regular commentary on the progress of key activities of the
+Assembly.
+4. Links to other relevant websites and materials (statistical reports, local health and
+wellbeing initiatives, Foundation Agency sites, support Services etc) Links to/integration with the Assembly's Social media platforms (if implemented).
+5. Provision of contact details of the Assembly backbone team and/or Foundation
+Members organizations as determined Profiles/biographies of Assembly members with background information and photos
+as determined.
+6. Other local health and wellbeing related events of interest to audience (possibly a
+Calendar).
+7. Latest news and images.
+8. Health 'stats and facts' Resources (Links to other relevant websites and research, Latrobe Health Assembly related governance information)
+9. Sign-up point for newsletters/emails.
+10. Calendar of events.
+
+Keynotes:
+*Very important that the website is fun, attractive and easy to use.
