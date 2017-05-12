@@ -206,11 +206,18 @@ section {
 .content-flex {
   flex-direction: column; }
 
-.gallery {
-  flex-direction: column; }
+.about-img {
+  margin-right: 10px;
+  margin-top: 80px; }
+  .about-img img {
+    width: 100%; }
 
-.about-img img {
-  width: 100%; }
+.section-head {
+  padding-bottom: 15px; }
+  .section-head h2 {
+    font-family: "Josefin Sans";
+    font-size: 32px;
+    font-weight: 400; }
 
 .scroll-down {
   margin-top: 50px; }
@@ -229,8 +236,6 @@ section {
       left: 50%;
       transform: translate(-50%, -50%); }
 
-#about .flex1:nth-child(1) {
-  margin-right: 10px; }
 #about .flex1:nth-child(2) {
   margin-left: 10px; }
 
@@ -247,18 +252,54 @@ section {
   background: #f9f9f9; }
 
 .flex-cube {
-  display: block;
-  background: #eee;
-  height: 300px;
-  width: 50%;
-  margin: 1px;
-  position: relative;
+  width: 280px;
+  height: 280px;
+  margin: 10px 10px 80px 10px; }
+  .flex-cube:hover .cube-contact {
+    opacity: 1; }
+
+.cube-img {
+  height: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border: 10px solid #fff;
+  box-sizing: border-box;
   overflow: hidden; }
-  .flex-cube:hover .back {
-    top: 0; }
+
+.cube-text {
+  padding-top: 10px; }
+  .cube-text h3 {
+    font-family: "Josefin Sans";
+    font-weight: 600; }
+
+.cube-contact {
+  height: 100%;
+  background: rgba(228, 221, 223, 0.95);
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease; }
+  .cube-contact h3 {
+    font-family: "Josefin Sans";
+    font-weight: 600;
+    padding-bottom: 15px; }
+  .cube-contact li {
+    list-style: none; }
+    .cube-contact li:last-child a {
+      margin-bottom: 0; }
+    .cube-contact li a {
+      color: #000;
+      display: block;
+      text-decoration: none;
+      margin-bottom: 5px;
+      padding: 2px 15px; }
+      .cube-contact li a span {
+        font-size: 18px; }
+
+.cube-contact-text {
+  margin-left: 5px; }
 
 .team-1 {
-  background: url("../img/team/1.jpeg") center;
+  background: url("../img/team/1.jpg") center;
   background-size: cover; }
 
 .team-2 {
@@ -273,33 +314,7 @@ section {
   background: url("../img/team/4.jpeg") center;
   background-size: cover; }
 
-.back {
-  background: rgba(241, 241, 241, 0.9);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 300px;
-  transition: 0.3s cubic-bezier(0.77, 0, 0.18, 1);
-  -webkit-transition: 0.3s cubic-bezier(0.77, 0, 0.18, 1);
-  padding: 10px;
-  box-sizing: border-box;
-  flex-direction: column; }
-  .back h2 {
-    text-align: center;
-    font-family: "Josefin Sans";
-    font-weight: 600; }
-
-.info-container {
-  position: relative; }
-
-.info {
-  position: absolute;
-  top: 85px;
-  left: 0;
-  opacity: 0;
-  transition: 0.2s ease;
-  -webkit-transition: 0.2s ease; }
-  .info.hover {
-    opacity: 1; }
+.gallery {
+  flex-wrap: wrap; }
 
 /*# sourceMappingURL=main.css.map */
