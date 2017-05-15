@@ -31,7 +31,7 @@ body {
   justify-content: center;
   align-items: center; }
 
-nav a, .learnMore, nav button, .memberLogin {
+nav a, .learnMore, nav button, .memberLogin, .footer-up a, .input, .textarea, .submit {
   transition: 0.3s ease;
   -webkit-transition: 0.3s ease; }
 
@@ -213,11 +213,11 @@ section {
     width: 100%; }
 
 .section-head {
-  padding-bottom: 15px; }
+  padding-bottom: 30px; }
   .section-head h2 {
     font-family: "Josefin Sans";
-    font-size: 32px;
-    font-weight: 400; }
+    font-size: 42px;
+    font-weight: 300; }
 
 .scroll-down {
   margin-top: 50px; }
@@ -319,12 +319,19 @@ section {
 
 #contact {
   background: #f9f9f9; }
+  #contact .section-head {
+    text-align: center; }
 
 .contact {
   margin-right: 10px; }
 
-.map {
+.info {
   margin-left: 10px; }
+  .info p {
+    padding-bottom: 10px; }
+
+.map {
+  margin-top: 15px; }
 
 .form-div {
   margin-bottom: 15px; }
@@ -338,6 +345,8 @@ section {
   font-size: 16px;
   border: none;
   background: #eee; }
+  .input:hover, .input:focus {
+    background: #e8e8e8; }
 
 .textarea {
   width: 100%;
@@ -346,14 +355,57 @@ section {
   font-size: 16px;
   border: none;
   background: #eee;
-  height: 200px; }
+  height: 200px;
+  resize: none; }
+  .textarea:hover, .textarea:focus {
+    background: #e8e8e8; }
 
 .submit {
   background: #3498db;
   color: #fff;
-  padding: 10px 45px;
+  padding: 10px 0;
+  width: 100%;
   font-size: 16px;
   border: none;
   cursor: pointer; }
+  .submit:hover {
+    background: #2980b9; }
+
+footer {
+  cursor: default; }
+
+.footer-up {
+  padding: 35px 0;
+  background: #2980b9;
+  text-align: center; }
+  .footer-up h2 {
+    font-weight: 300;
+    color: #fff;
+    font-family: "Josefin Sans";
+    font-size: 42px; }
+  .footer-up li {
+    list-style: none;
+    display: inline-block;
+    margin: 35px 25px; }
+    .footer-up li a {
+      display: block;
+      width: 64px;
+      height: 64px;
+      background: #145e8f;
+      border-radius: 5px;
+      color: #fff;
+      position: relative; }
+      .footer-up li a:hover {
+        background: #125079; }
+      .footer-up li a span:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px; }
+
+.footer-down {
+  background: #252525;
+  padding: 35px 0; }
 
 /*# sourceMappingURL=main.css.map */

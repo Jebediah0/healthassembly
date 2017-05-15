@@ -12,6 +12,7 @@ body
 
 // VARIABLES
 $color1: #3498db
+$color1Dark: #2980b9
 
 // SET CLASSES
 .flex
@@ -23,7 +24,7 @@ $color1: #3498db
 .f-center
    justify-content: center
    align-items: center
-nav a, .learnMore, nav button, .memberLogin
+nav a, .learnMore, nav button, .memberLogin, .footer-up a, .input, .textarea, .submit
    transition: 0.3s ease
    -webkit-transition: 0.3s ease
 #wrapper
@@ -200,11 +201,11 @@ section
    img
       width: 100%
 .section-head
-   padding-bottom: 15px
+   padding-bottom: 30px
    h2
       font-family: 'Josefin Sans'
-      font-size: 32px
-      font-weight: 400
+      font-size: 42px
+      font-weight: 300
 .scroll-down
    margin-top: 50px
    a
@@ -300,12 +301,19 @@ section
 
 #contact
    background: #f9f9f9
+   .section-head
+      text-align: center
 
 .contact
    margin-right: 10px
 
-.map
+.info
    margin-left: 10px
+   p
+      padding-bottom: 10px
+
+.map
+   margin-top: 15px
 
 .form-div
    margin-bottom: 15px
@@ -319,6 +327,8 @@ section
    font-size: 16px
    border: none
    background: #eee
+   &:hover, &:focus
+      background: #e8e8e8
 
 .textarea
    width: 100%
@@ -328,30 +338,57 @@ section
    border: none
    background: #eee
    height: 200px
+   resize: none
+   &:hover, &:focus
+      background: #e8e8e8
 
 .submit
    background: $color1
    color: #fff
-   padding: 10px 45px
+   padding: 10px 0
+   width: 100%
    font-size: 16px
    border: none
    cursor: pointer
+   &:hover
+      background: $color1Dark
 
+footer
+   cursor: default
 
+.footer-up
+   padding: 35px 0
+   background: $color1Dark
+   text-align: center
+   h2
+      font-weight: 300
+      color: #fff
+      font-family: 'Josefin Sans'
+      font-size: 42px
+   li
+      list-style: none
+      display: inline-block
+      margin: 35px 25px
+      a
+         display: block
+         width: 64px
+         height: 64px
+         background: #145e8f
+         border-radius: 5px
+         color: #fff
+         position: relative
+         &:hover
+            background: #125079
+         span:before
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            font-size: 24px
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footer-down
+   background: #252525
+   padding: 35px 0
 
 
 

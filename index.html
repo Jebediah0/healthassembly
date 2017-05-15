@@ -7,6 +7,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
       <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/balloon.css">
       <script src="js/code.js"></script>
       <script src="js/parallax.js"></script>
    </head>
@@ -400,92 +401,54 @@
                <div class="contact flex1">
                   <form action="">
                      <div class="form-div">
-                        <h2>Chuck us an email</h2>
+                        <input type="text" name="name" placeholder="Name" class="input" required="">
                      </div>
                      <div class="form-div">
-                        <input type="text" name="name" placeholder="Name" class="input">
+                        <input type="email" name="email" placeholder="Email" class="input" required="">
                      </div>
                      <div class="form-div">
-                        <input type="email" name="email" placeholder="Email" class="input">
+                        <input type="text" name="subject" placeholder="Subject" class="input" required="">
                      </div>
                      <div class="form-div">
-                        <input type="text" name="subject" placeholder="Subject" class="input">
-                     </div>
-                     <div class="form-div">
-                        <textarea name="message" placeholder="Message" class="textarea"></textarea>
+                        <textarea name="message" placeholder="Message" class="textarea" required=""></textarea>
                      </div>
                      <div class="form-div">
                         <input type="submit" value="Send" class="submit">
                      </div>
                   </form>
                </div>
+               <div class="info flex1">
+                  <p><b>Phone:</b> 04 5555 5555</p>
+                  <p><b>Address:</b> 21 Something Street, State, Country</p>
+               </div>
+            </div>
+            <div class="map">
                <div class="map flex1">
-                  
+                  <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:500px;width:1200px;'><div id='gmap_canvas' style='height:500px;width:1200px;'></div><div><small><a href="http://embedgooglemaps.com">embed google maps</a></small></div><div><small><a href="http://couponcode.ng/konga/">Enjoy big discounts for Konga with these easy to use coupon.</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(51.5073509,-0.12775829999998223),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(51.5073509,-0.12775829999998223)});infowindow = new google.maps.InfoWindow({content:'<strong>Our Location</strong><br>London, United Kingdom<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
                </div>
             </div>
          </div>
       </section>
 
+      <footer class="parallax-bg">
+         <div class="footer-up">
+            <div id="wrapper">
+               <h2>Connect with us.</h2>
+               <ul>
+                  <li><a href="#" data-balloon="Facebook" data-balloon-pos="up"><span class="fa fa-facebook"></span></a></li>
+                  <li><a href="#" data-balloon="Twitter" data-balloon-pos="up"><span class="fa fa-twitter"></span></a></li>
+                  <li><a href="#" data-balloon="Linked In" data-balloon-pos="up"><span class="fa fa-linkedin"></span></a></li>
+                  <li><a href="#" data-balloon="Google+" data-balloon-pos="up"><span class="fa fa-google-plus"></span></a></li>
+                  <li><a href="#" data-balloon="YouTube" data-balloon-pos="up"><span class="fa fa-youtube-play"></span></a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="footer-down">
+            <div id="wrapper">
 
+            </div>
+         </div>
+      </footer>
 
-
-
-
-
-
-
-
-
-
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
    </body>
 </html>
