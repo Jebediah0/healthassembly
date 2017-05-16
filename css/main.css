@@ -9,18 +9,6 @@
 .upDown {
   animation: scroll_down 1.5s ease infinite; }
 
-@media screen and (max-width: 1200px) {
-  #wrapper {
-    width: 100% !important; }
-
-  .phone-nav {
-    display: block; }
-
-  nav {
-    display: none !important; } }
-@media screen and (min-width: 1200px) {
-  .phone-nav {
-    display: none; } }
 * {
   padding: 0;
   margin: 0;
@@ -423,7 +411,7 @@ footer {
 
 .phone-nav {
   position: fixed;
-  top: 88px;
+  top: 0;
   left: 0;
   background: #252525;
   width: 80%;
