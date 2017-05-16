@@ -11,7 +11,7 @@ $(function() {
 	});
 
    // SMOOTH SCROLL
-   var headerHeight = $('nav').outerHeight();
+   var headerHeight = $('nav, .open-phone-nav').outerHeight();
 
 	$('.smooth-scroll').click(function(e) {
 
@@ -60,6 +60,11 @@ $(function() {
    });
    $('.team-4').mouseout(function() {
       $('.team-4-info').removeClass('hover');
+   });
+
+   // PHONE NAV
+   $('.open-phone-nav').click(function() {
+      $('.phone-nav').toggleClass('toggle');
    });
 
 
