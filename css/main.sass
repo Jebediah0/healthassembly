@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Josefin+Sans:300,400,600,700')
 @import keyframes
+@import responsive
+
 
 *
    padding: 0
@@ -313,7 +315,8 @@ section
       padding-bottom: 10px
 
 .map
-   margin-top: 15px
+   margin-top: 25px
+   border-bottom: 1px solid #ddd
 
 .form-div
    margin-bottom: 15px
@@ -393,19 +396,42 @@ footer
 
 
 
+.phone-nav
+   position: fixed
+   top: 88px
+   left: 0
+   background: #252525
+   width: 80%
+   z-index: 12
+   height: 100vh
+   text-align: center
+   padding: 45px 0
+   h1
+      font-weight: 600
+      color: #fff
+      font-size: 42px
+      font-family: 'Josefin Sans'
+      padding-bottom: 45px
+   li
+      list-style: none
+      &:first-child a
+         border-top: 2px solid #444
+      a
+         color: #fff
+         font-weight: 600
+         font-size: 32px
+         display: block
+         text-decoration: none
+         padding: 20px 0
+         border-bottom: 2px solid #444
 
-
-
-
-
-
-
-
-
-
-
-
-
+.open-phone-nav
+   position: fixed
+   width: 100%
+   background: #fff
+   text-align: center
+   z-index: 13
+   padding: 10px 0
 
 
 
