@@ -1,0 +1,12 @@
+#whatwedo .flex-cube {
+  width: 500px;
+height: 700px;
+}
+.whatWeDoImg1 {
+  background: url("../img/whatWeDo/img1.jpg") center;
+  background-size: cover;
+}
+.whatWeDoImg2 {
+  background: url("../img/whatWeDo/img2.jpg") center;
+    background-size: cover;
+}
