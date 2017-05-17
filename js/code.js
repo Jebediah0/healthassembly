@@ -77,6 +77,9 @@ $(function() {
    else if (navigator.userAgent.search("Opera") >= 0) {
       $('.useOther').addClass('show');
    }
+   else if (navigator.userAgent.search("Edge") >= 0) {
+      $('.useOther').addClass('show');
+   }
    $('.close-useOther').click(function() {
       $('.useOther').addClass('hidden');
    });
