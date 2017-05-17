@@ -67,22 +67,18 @@ $(function() {
       $('.phone-nav').toggleClass('toggle');
    });
 
-   var ba = ["Chrome","Firefox","Safari","Opera","MSIE","Trident","Edge"];
-      var b, ua = navigator.userAgent;
-      for(var i=0; i < ba.length; i++){
-          if( ua.indexOf(ba[i]) > -1 ){
-              b = ba[i];
-              break;
-          }
-      }
-      if (b == "MSIE") {
-         $('.useOther').addClass('toggle');
-      }
-      if (b == "Trident") {
-         $('.useOther').addClass('toggle');
-      }
-      if (b == "Edge") {
-         $('.useOther').addClass('toggle');
-      }
+   // CHECK BROWSER
+   if (navigator.userAgent.search("Trident") >= 0) {
+      $('.useOther').addClass('show');
+   }
+   else if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+      $('.useOther').addClass('show');
+   }
+   else if (navigator.userAgent.search("Opera") >= 0) {
+      $('.useOther').addClass('show');
+   }
+   $('.close-useOther').click(function() {
+      $('.useOther').addClass('hidden');
+   });
 
 });

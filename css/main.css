@@ -11,22 +11,25 @@
 
 .useOther {
   position: fixed;
-  top: 20%;
+  bottom: 0;
   left: 0;
-  width: 340px;
-  padding: 25px 60px;
+  width: 100%;
+  padding: 25px 0;
   box-sizing: border-box;
   background: #fff;
   text-align: center;
   z-index: 10000000;
-  transform: translateY(-50%);
-  border-radius: 0 5px 5px 0;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   visibility: hidden;
-  opacity: 0; }
-  .useOther.toggle {
+  opacity: 0;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease; }
+  .useOther.show {
     visibility: visible;
     opacity: 1; }
+  .useOther.hidden {
+    visibility: hidden;
+    opacity: 0; }
   .useOther p {
     color: #000;
     font-size: 16px; }
@@ -36,8 +39,8 @@
 
 .useOther-up {
   position: fixed;
-  top: 10px;
-  right: 10px;
+  bottom: 20px;
+  right: 20px;
   color: #aaa;
   cursor: pointer; }
   .useOther-up:hover {
