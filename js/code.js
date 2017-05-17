@@ -67,5 +67,22 @@ $(function() {
       $('.phone-nav').toggleClass('toggle');
    });
 
+   var ba = ["Chrome","Firefox","Safari","Opera","MSIE","Trident","Edge"];
+      var b, ua = navigator.userAgent;
+      for(var i=0; i < ba.length; i++){
+          if( ua.indexOf(ba[i]) > -1 ){
+              b = ba[i];
+              break;
+          }
+      }
+      if (b == "MSIE") {
+         $('.useOther').addClass('toggle');
+      }
+      if (b == "Trident") {
+         $('.useOther').addClass('toggle');
+      }
+      if (b == "Edge") {
+         $('.useOther').addClass('toggle');
+      }
 
 });
